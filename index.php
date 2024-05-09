@@ -12,7 +12,18 @@ require_once  __DIR__. '/db.php';
 <body>
 
 <header>
-    <div class="container"></div>
+    <div class="container-header">
+        <div class="row-header">
+            <div>LOGO</div>
+            <input type="text" placeholder="cerca un film" class="input-header">
+            <ul class="social-header">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+    </div>
 
 </header>
 
@@ -53,9 +64,9 @@ require_once  __DIR__. '/db.php';
 
 <?php 
 
-include __DIR__. './Style/styleHeader.php'; 
-include __DIR__. './Style/styleMain.php';
-include __DIR__. './Style/styleCard.php';  
+include __DIR__. '/Style/styleHeader.php'; 
+include __DIR__. '/Style/styleMain.php';
+include __DIR__. '/Style/styleCard.php';  
 
 ?>
 
@@ -66,7 +77,10 @@ include __DIR__. './Style/styleCard.php';
         padding: 0;
         box-sizing: border-box;
         background-color: rgb(0,48,143);
+    }
 
+    ul, li, ol, menu{
+        list-style: none;
     }
 
     
