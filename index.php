@@ -50,6 +50,42 @@ require_once  __DIR__. '/db.php';
         <?php
         endforeach
         ?>
+
+        <?php
+        foreach($movies as $movie):
+        ?>
+
+        <div class="col-card">
+            <div class="cnt-img">
+                <img class="img-p" src="<?php echo $movie->img; ?>" alt="">
+            </div>
+            <div class="info-film">
+                <span class="mr"><?php echo $movie->title; ?></span> 
+                <span class="mr"><?php echo $movie->language; ?></span> 
+                <span class="vote"><?php echo $movie->vote; ?></span> 
+            </div> 
+        </div>
+        <?php
+        endforeach
+        ?>
+
+        <?php
+        foreach($tvSeries as $tvSerie):
+        ?>
+        <div class="col-card">
+            <div class="cnt-img">
+                <img class="img-p" src="<?php echo $tvSerie->img; ?>" alt="">
+            </div>
+            <div class="info-film">
+                <span class="mr"><?php echo $tvSerie->title; ?></span> 
+                <span class="mr"><?php echo $tvSerie->language; ?></span> 
+                <span class="vote"><?php echo $tvSerie->vote; ?></span> 
+            </div> 
+        </div>
+        <?php
+        endforeach
+        ?>
+
     </div>
  </div>
 </main>

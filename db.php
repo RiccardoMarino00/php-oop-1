@@ -53,9 +53,8 @@ class Movie extends Production{
    public $time;
 
    
-   function __construct(string $_title, string $_language, int $_vote, string $_img, string $_profit, string $_time)
-   {
-      parent::__construct(string $_title, string $_language, int $_vote, string $_img);
+   function __construct(string $_title, string $_language, int $_vote, string $_img, string $_profit, string $_time){
+      parent::__construct($_title, $_language, $_vote, $_img);
       $this->profit = $_profit;
       $this->time = $_time;
 
@@ -69,7 +68,7 @@ class TvSerie extends Production {
 
    function __construct(string $_title, string $_language, int $_vote, string $_img, string $_numberOfSeason)
    {
-      parent::__construct(string $_title, string $_language, int $_vote, string $_img);
+      parent::__construct($_title, $_language,  $_vote,  $_img);
 
    }
 
