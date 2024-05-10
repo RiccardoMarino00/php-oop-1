@@ -6,6 +6,9 @@ require_once  __DIR__. '/db.php';
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film Production</title>
 </head>
@@ -14,13 +17,13 @@ require_once  __DIR__. '/db.php';
 <header>
     <div class="container-header">
         <div class="row-header">
-            <div>LOGO</div>
+            <div><i class="fa-solid fa-clapperboard logo"></i></div>
             <input type="text" placeholder="cerca un film" class="input-header">
             <ul class="social-header">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
             </ul>
         </div>
     </div>
@@ -30,17 +33,7 @@ require_once  __DIR__. '/db.php';
 <main>
  <div class="container">
     <div class="row">
-        <div class="col-card">
-            <div class="cnt-img">
-                <img class="img-p" src="<?php echo $TopImg; ?>" >
-            </div>
-            <div class="info-film">
-                <span class="mr"><?php echo $TopTitle; ?></span> 
-                <span class="mr"><?php echo $TopLanguage; ?></span> 
-                <span class="vote"><?php echo $TopVote; ?></span> 
-            </div>
-            
-        </div>
+        
 
         <div class="col-card">
             <div class="cnt-img">
@@ -52,13 +45,25 @@ require_once  __DIR__. '/db.php';
                 <span class="vote"><?php echo $EatPreyLoveVote; ?></span> 
             </div> 
         </div>
+        
+        <div class="col-card">
+            <div class="cnt-img">
+                <img class="img-p" src="<?php echo $TopImg; ?>" >
+            </div>
+            <div class="info-film">
+                <span class="mr"><?php echo $TopTitle; ?></span> 
+                <span class="mr"><?php echo $TopLanguage; ?></span> 
+                <span class="vote"><?php echo $TopVote; ?></span> 
+            </div>
+            
+        </div>
     </div>
  </div>
 </main>
 
 
 
-    
+    <script src="https://kit.fontawesome.com/cf3b3313c9.js" crossorigin="anonymous"></script>
 </body>
 </html>
 
@@ -76,13 +81,22 @@ include __DIR__. '/Style/styleCard.php';
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-color: rgb(0,48,143);
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background: rgb(0,0,0);
+        background: linear-gradient(162deg, rgba(0,0,0,1) 51%, rgba(159,13,23,1) 100%);
     }
 
     ul, li, ol, menu{
         list-style: none;
     }
 
+
+    a{
+        text-decoration: none;
+        color: currentcolor;
+    }
     
  
 

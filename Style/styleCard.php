@@ -3,6 +3,8 @@
         /* width: 250px; */
         width: 100%;
         border-radius: 10px;
+        border: 2px solid white;
+
 
         
     }
@@ -36,6 +38,9 @@
 
     .cnt-img{
         width: 300px;
+        border-radius: 10px;
+
+
     }
 
     .vote{

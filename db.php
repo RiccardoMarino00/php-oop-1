@@ -43,7 +43,7 @@ class Production {
 
 $TopGun = new Production ('Top Gun', 'English', 10, 'https://www.ecranlarge.com/uploads/image/001/199/obe6dugbk95jabwiio5uwmu7dyj-919.jpg');
 $EatPreyLove = new Production ('Eat Prey Love', 'English', 9, 'https://3.bp.blogspot.com/-6V6FyZlfBx4/T274sG4LuyI/AAAAAAAAFpg/dhb2615GqdM/s1600/eat_pray_love06.jpg');
-
+$Avengers = new Production ('Avengers Infinity War', 'English', 8, 'https://th.bing.com/th/id/OIP.ZkOmuqOWNqKDYkMKe2YeAgAAAA?rs=1&pid=ImgDetMain');
 
 $TopTitle = $TopGun -> title;
 $TopLanguage = $TopGun -> language;
@@ -53,6 +53,8 @@ $EatPreyLoveTitle = $EatPreyLove -> title;
 $EatPreyLoveLanguage = $EatPreyLove -> language;
 $EatPreyLoveVote = $EatPreyLove -> vote;
 $EatPreyLoveImg = $EatPreyLove -> img;
+$AvengersTitle = $Avengers -> title;
+
 
 
 ?>
