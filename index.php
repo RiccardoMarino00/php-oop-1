@@ -33,30 +33,23 @@ require_once  __DIR__. '/db.php';
 <main>
  <div class="container">
     <div class="row">
-        
+        <?php
+        foreach($films as $film):
+        ?>
 
         <div class="col-card">
             <div class="cnt-img">
-                <img class="img-p" src="<?php echo $EatPreyLoveImg; ?>" alt="">
+                <img class="img-p" src="<?php echo $film->img; ?>" alt="">
             </div>
             <div class="info-film">
-                <span class="mr"><?php echo $EatPreyLoveTitle; ?></span> 
-                <span class="mr"><?php echo $EatPreyLoveLanguage; ?></span> 
-                <span class="vote"><?php echo $EatPreyLoveVote; ?></span> 
+                <span class="mr"><?php echo $film->title; ?></span> 
+                <span class="mr"><?php echo $film->language; ?></span> 
+                <span class="vote"><?php echo $film->vote; ?></span> 
             </div> 
         </div>
-        
-        <div class="col-card">
-            <div class="cnt-img">
-                <img class="img-p" src="<?php echo $TopImg; ?>" >
-            </div>
-            <div class="info-film">
-                <span class="mr"><?php echo $TopTitle; ?></span> 
-                <span class="mr"><?php echo $TopLanguage; ?></span> 
-                <span class="vote"><?php echo $TopVote; ?></span> 
-            </div>
-            
-        </div>
+        <?php
+        endforeach
+        ?>
     </div>
  </div>
 </main>
