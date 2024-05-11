@@ -69,6 +69,7 @@ class TvSerie extends Production {
    function __construct(string $_title, string $_language, int $_vote, string $_img, string $_numberOfSeason)
    {
       parent::__construct($_title, $_language,  $_vote,  $_img);
+      $this->numberOfSeason = $_numberOfSeason;
 
    }
 

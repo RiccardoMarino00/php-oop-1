@@ -42,9 +42,9 @@ require_once  __DIR__. '/db.php';
                 <img class="img-p" src="<?php echo $film->img; ?>" alt="">
             </div>
             <div class="info-film">
-                <span class="mr"><?php echo $film->title; ?></span> 
-                <span class="mr"><?php echo $film->language; ?></span> 
-                <span class="vote"><?php echo $film->vote; ?></span> 
+                <span class="mr"><?php echo $film->title; ?> | </span> 
+                <span class="mr"><?php echo $film->language; ?> | </span> 
+                <span class="vote">Voto: <?php echo $film->vote; ?></span> 
             </div> 
         </div>
         <?php
@@ -60,9 +60,11 @@ require_once  __DIR__. '/db.php';
                 <img class="img-p" src="<?php echo $movie->img; ?>" alt="">
             </div>
             <div class="info-film">
-                <span class="mr"><?php echo $movie->title; ?></span> 
-                <span class="mr"><?php echo $movie->language; ?></span> 
-                <span class="vote"><?php echo $movie->vote; ?></span> 
+                <span class="mr"><?php echo $movie->title; ?> | </span> 
+                <span class="mr"><?php echo $movie->language; ?> | </span> 
+                <span class="vote">Voto: <?php echo $movie->vote; ?></span>  <br>
+                <span><?php echo $movie->profit ?> | </span> <br>
+                <span><?php echo $movie->time ?></span>
             </div> 
         </div>
         <?php
@@ -77,9 +79,11 @@ require_once  __DIR__. '/db.php';
                 <img class="img-p" src="<?php echo $tvSerie->img; ?>" alt="">
             </div>
             <div class="info-film">
-                <span class="mr"><?php echo $tvSerie->title; ?></span> 
-                <span class="mr"><?php echo $tvSerie->language; ?></span> 
-                <span class="vote"><?php echo $tvSerie->vote; ?></span> 
+                <span class="mr"><?php echo $tvSerie->title; ?> | </span> 
+                <span class="mr"><?php echo $tvSerie->language; ?> | </span> 
+                <span class="vote">Voto: <?php echo $tvSerie->vote; ?></span> 
+                <span ><?php echo $tvSerie->numberOfSeason; ?> | </span> 
+
             </div> 
         </div>
         <?php
