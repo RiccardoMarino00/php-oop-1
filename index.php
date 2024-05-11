@@ -45,6 +45,8 @@ require_once  __DIR__. '/db.php';
                 <span class="mr"><?php echo $film->title; ?> | </span> 
                 <span class="mr"><?php echo $film->language; ?> | </span> 
                 <span class="vote">Voto: <?php echo $film->vote; ?></span> 
+                <span><?php echo $film->genre->nomeGenre ?></span> <br>
+                <span><?php echo $film->genre->descrizioneGenre ?></span>
             </div> 
         </div>
         <?php
