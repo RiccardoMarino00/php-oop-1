@@ -1,5 +1,5 @@
 <?php
-require_once  __DIR__. '/db.php';
+include  __DIR__. '/Models/db.php';
 ?>
 
 <!DOCTYPE html>
@@ -33,25 +33,7 @@ require_once  __DIR__. '/db.php';
 <main>
  <div class="container">
     <div class="row">
-        <?php
-        foreach($films as $film):
-        ?>
-
-        <div class="col-card">
-            <div class="cnt-img">
-                <img class="img-p" src="<?php echo $film->img; ?>" alt="">
-            </div>
-            <div class="info-film">
-                <span class="mr"><?php echo $film->title; ?> | </span> 
-                <span class="mr"><?php echo $film->language; ?> | </span> 
-                <span class="vote">Voto: <?php echo $film->vote; ?></span> 
-                <span><?php echo $film->genre->nomeGenre ?></span> <br>
-                <span><?php echo $film->genre->descrizioneGenre ?></span>
-            </div> 
-        </div>
-        <?php
-        endforeach
-        ?>
+        
 
         <?php
         foreach($movies as $movie):
@@ -86,6 +68,26 @@ require_once  __DIR__. '/db.php';
                 <span class="vote">Voto: <?php echo $tvSerie->vote; ?></span> 
                 <span ><?php echo $tvSerie->numberOfSeason; ?> | </span> 
 
+            </div> 
+        </div>
+        <?php
+        endforeach
+        ?>
+
+        <?php
+        foreach($films as $film):
+        ?>
+
+        <div class="col-card">
+            <div class="cnt-img">
+                <img class="img-p" src="<?php echo $film->img; ?>" alt="">
+            </div>
+            <div class="info-film">
+                <span class="mr"><?php echo $film->title; ?> | </span> 
+                <span class="mr"><?php echo $film->language; ?> | </span> 
+                <span class="vote">Voto: <?php echo $film->vote; ?></span> 
+                <span><?php echo $film->genre->nomeGenre ?></span> <br>
+                <span><?php echo $film->genre->descrizioneGenre ?></span>
             </div> 
         </div>
         <?php
